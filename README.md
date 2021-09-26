@@ -20,7 +20,7 @@ To run the program in Linux system like Ubuntu execute as shown below.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@_abhisheksinha](https://twitter.com/_abhisheksinha) - email4abhi@gmail.com
+Abhishek Kumar Sinha - [@_abhisheksinha](https://twitter.com/_abhisheksinha) - email4abhi@gmail.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/yAbhishekKumarSinha/cpp)
 
