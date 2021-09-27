@@ -6,7 +6,7 @@ C++ Code Examples
 To complie the program GNU C++ compiler g++ can be used as shown below in terminal.
 
 ```bash
-g++ main.cpp -o prog -std=C++17
+g++ main.cpp -o prog -std=c++17
 ```
 To run the program in Linux system like Ubuntu execute as shown below.
 
