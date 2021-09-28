@@ -51,6 +51,24 @@ void test_unique_ptr()
 }
 
 
+class B2
+{
+public:
+	void fun() { cout << "B2::fun !" << endl; }
+
+};
+class D2:public B2
+{
+public:
+	void fun() { cout << "D2::fun !" << endl; }
+};
+
+void test_without_virtual()
+{
+	B2 *obj = new D2();
+	obj->fun();
+}
+
 int myAtoI(string value)
 {
 	int result = 0;
@@ -59,7 +77,9 @@ int myAtoI(string value)
 
 	//Dry Run of Below :: value = 123
 
-	// i = 0 -> 0 * 10 + 49 - 48 -> 0 + 1 -> 1 #ASCII of 1 is 49 & '0' is 48
+	// i = 0 -> 0  * 10 + 49 - 48 -> 0   + 1 -> 1   #ASCII of 1 is 49 & '0' is 48
+	// i = 1 -> 1  * 10 + 50 - 48 -> 10  + 2 -> 12  #ASCII of 1 is 49 & '0' is 48
+	// i = 2 -> 12 * 10 + 51 - 48 -> 120 + 3 -> 123 #ASCII of 1 is 49 & '0' is 48
 
 	for(int i = 0; i < size; i++)
 	{
@@ -77,6 +97,7 @@ int main()
 	cout << "Hello from Ubuntu 20.04 LTS " << endl;
 //	test_virtual();
 	//test_unique_ptr();
-	cout << myAtoI("123") << endl;
+	//cout << myAtoI("123") << endl;
+	test_without_virtual();
 	return 0;
 }
