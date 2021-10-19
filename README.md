@@ -13,8 +13,32 @@ To run the program in Linux system like Ubuntu execute as shown below.
 ```bash
 ./a.out
 ```
-
-###### Max Element Index on Array/Vector
+##### Sort Elements of Array/Vector
+###### Array
+- Ascending
+```c++
+int arr[] = { 1, 5, 8, 9, 6, 7, 3, 4, 2, 0 };
+int n = sizeof(arr) / sizeof(arr[0]);
+sort(arr, arr + n);
+```
+- Descending
+```c++
+int arr[] = { 1, 5, 8, 9, 6, 7, 3, 4, 2, 0 };
+int n = sizeof(arr) / sizeof(arr[0]);
+sort(arr, arr + n, greater<int>());
+```
+###### Vector
+- Ascending
+```c++
+vector<int> a = { 1, 45, 54, 71, 76, 12 };
+sort(a.begin(), a.end());
+```
+- Descending
+```c++
+vector<int> a = { 1, 45, 54, 71, 76, 12 };
+sort(a.begin(), a.end(), greater<int>());
+```
+##### Max Element Index on Array/Vector
 - Array
 ```c++
 int A[4] = {0, 2, 3, 1};
